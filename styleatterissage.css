@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+   scroll-behavior: smooth;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(15, 15, 15, 0.8);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar span{
+  color: rgb(7, 116, 130);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar h1{
+  color: rgb(253, 255, 255);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin: 0 1rem;
+}
+
+.nav-links li a:hover {
+  color: #f39c12;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color:rgba(15, 15, 15,0.8);
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+  .hero {
+    height: 70vh;
+    background: linear-gradient(to right, #0e0e0e, #1a1a1a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  
+  .hero-content span {
+    color: #00fff0;
+  }
+  
+ .hero-description {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #fff;          /* rend le texte visible sur fond sombre */
+  z-index: 2;           /* si image ou overlay */
+  position: relative;
+}
+
+  .cta {
+    padding: 12px 24px;
+    background: #00fff0;
+    color: #111;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .cta:hover {
+    background: #00ccc4;
+  }
+  
+  .section {
+    padding: 100px 50px;
+ 
+  }
+  
+  .light {
+    background: #ffffff;
+    color: #111;
+  }
+  
+  .dark {
+    background: #111;
+    color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .projects-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 40px;
+  }
+  
+  .project-card {
+    background: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .project-card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .form-professionnel {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #00fff0;
+    font-size: 16px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 14px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #00fff0;
+    box-shadow: 0 0 0 3px rgba(0, 255, 240, 0.2);
+    outline: none;
+  }
+  
+  button {
+    background-color: #00fff0;
+    color: #111;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%;
+    margin-top: 10px;
+    
+  }
+  button:hover {
+    background-color: #00ccc4;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 30px;
+    background: #0e0e0e;
+    color: #999;
+  }
+  
+  footer .socials a {
+    color: #00fff0;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+    @media (max-width:767px) {
+      .nav-bar{
+        max-width: 100%;
+        padding: 20px;
+      }
+    }

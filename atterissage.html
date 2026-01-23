@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nsale/NGUELE| Développeur & Designer</title>
+  <link rel="stylesheet" href="styleatterissage.css"/>
+</head>
+<body>  
+  <nav class="navbar">
+    <h1><span>Nsale</span>NGUELE</h1>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#projet">Projet</a></li>
+      <li><a href="#competence">Compétence</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <h1>nous sommes <span>Binomes</span></h1>
+      <p class="hero-description">Développeur Front-End & Designer UI/UX</p>
+      <a href="#contact" class="cta">Travaillons ensemble</a>
+    </div>
+  </section>
+
+  <section id="apropos" class="section light">
+    <div class="container">
+      <h2>À propos de nous</h2>
+      <p>nous concevons des interfaces visuelles qui marquent et des expériences web qui captivent. notre objectif est de créer un design utile, épuré et émotionnel. Chaque ligne de code est pensée pour valoriser l’esthétique autant que la performance.</p>
+    </div>
+  </section>
+
+  <section id="projet" class="section dark">
+    <div class="container">
+      <h2>Projets</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="portofolio.jpeg" alt="Projet 1">
+          <h3>Portfolio interactif</h3>
+          <p>Design minimaliste avec animations douces.</p>
+        </div>
+        <div class="project-card">
+          <img src="ui.jpeg" alt="Projet 2">
+          <h3>Application UI mobile</h3>
+          <p>UX intuitive & responsive.</p>
+        </div>
+        <div class="project-card">
+          <img src="landing.jpeg" alt="Projet 3">
+          <h3>Landing page</h3>
+          <p>Effet glassmorphism et navigation fluide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competence" class="section light">
+    <div class="container">
+      <h2>Compétences</h2>
+      <ul class="skills-list">
+        <li>HTML5 / CSS3 / JavaScript</li>
+        <li>React / Vue (bases)</li>
+        <li>Adobe XD / Figma</li>
+        <li>Responsive Design</li>
+        <li>Identité visuelle & branding</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section dark">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <form class="form-professionnel" method="post">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Adresse Email</label>
+          <input type="email" id="email" name="email" placeholder="Nsale@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Votre message ici..." rows="5" required></textarea>
+        </div>
+        <button onclick="AfficherAlerte()">Envoyer le message</button>
+        <script>
+          function AfficherAlerte(){
+              alert('Merci pour votre message ! Je reviendrai vers vous très vite.');
+            } 
+          </script>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Nsale ou NGUELE. Tous droits réservés.</p>
+    <div class="socials">
+      <a href="#">Whatsapp</a> |
+      <a href="#">facebook</a> |
+      <a href="#">instagram</a>
+    </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
