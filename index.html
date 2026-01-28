@@ -77,29 +77,24 @@
 
   <section id="contact" class="section dark">
     <div class="container">
-      <h2>Contactez-nous</h2>
-      <form class="form-professionnel" method="post">
-        <div class="form-group">
-          <label for="name">Nom</label>
-          <input type="text" id="name" name="name" placeholder="Votre nom" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Adresse Email</label>
-          <input type="email" id="email" name="email" placeholder="Nsale@email.com" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Votre message ici..." rows="5" required></textarea>
-        </div>
-        <button onclick="AfficherAlerte()">Envoyer le message</button>
-        <script>
-          function AfficherAlerte(){
-              alert('Merci pour votre message ! Je reviendrai vers vous très vite.');
-            } 
-          </script>
-      </form>
+      <h2>Nous contacter</h2>
+      <div class="contact-options">
+        <a href="https://wa.me/237671681076?text=salut%20je,%20je%20vous%20contacte%20depuis%20votre%20site." 
+           class="whatsapp-float" 
+           target="_blank" 
+           title="Contactez-moi sur WhatsApp 1">
+          Contacter par WhatsApp (Nsale kerita)
+        </a>
+        
+        <a href="mailto:nsaledjoutchet@gmail.com?subject=salut%20je vous contecte%20le%20 depuissite&body=votre site%20Nsalekerita,"
+           class="email-float" 
+           title="Envoyez un email">
+          Contacter par Email
+        </a>
+      </div>
     </div>
   </section>
+
 
   <footer>
     <p>© 2025 Nsale ou NGUELE. Tous droits réservés.</p>
